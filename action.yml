@@ -7,7 +7,7 @@ runs:
     - name: Checkout action repository
       uses: actions/checkout@v4
       with:
-        repository: trevorbaca/install-lilypond
+        repository: Abjad/install-lilypond
         ref: main
         path: install-lilypond-temp
 
