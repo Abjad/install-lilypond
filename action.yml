@@ -1,14 +1,20 @@
 name: Install LilyPond
 description: Installs LilyPond on a GitHub Actions runner
 
+inputs:
+  lilypond-version:
+    description: LilyPond version to install (2.25.22, 2.25.23, ...)
+    required: true
+    default: "2.25.22"
+
 runs:
   using: composite
   steps:
     - name: Checkout action repository
       uses: actions/checkout@v4
       with:
-        repository: trevorbaca/install-lilypond
-        ref: main
+        repository: Abjad/install-lilypond
+        ref: v${{ inputs.lilypond-version }}
         path: install-lilypond-temp
 
     - name: Install LilyPond
