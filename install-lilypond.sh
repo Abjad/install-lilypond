@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-LILYPOND_VERSION=2.25.23
-CHECKSUM="9ff92d90f6af647e25bdc9b94ee2716ad9d9d58d7d48bd4184b7f488c3f27535"
+LILYPOND_VERSION=2.25.24
+CHECKSUM="854a3190e39522403849aa26d1058e2a89dd26c2da629dc45dd74fe1b1a9981b"
 
 echo "Installing LilyPond version: ${LILYPOND_VERSION}"
 lilypond_archive="lilypond-${LILYPOND_VERSION}-linux-x86_64.tar.gz"
