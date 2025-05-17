@@ -3,7 +3,7 @@ description: Installs LilyPond on a GitHub Actions runner
 
 inputs:
   lilypond-version:
-    description: LilyPond version to install (2.25.22, ..., 2.25.25)
+    description: LilyPond version to install (2.25.22, ..., 2.25.26)
     required: true
     default: "2.25.22"
 
